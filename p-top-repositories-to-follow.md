@@ -26,6 +26,12 @@ popular repositories
    
       Code for Nodemcu as a MQTT Client
       
+
+* <a href="https://github.com/techiesms/WiFi-Credentials-Saving---Connecting/blob/master/WiFi_Credentials_Saving_and_Connecting_/WiFi_Credentials_Saving_and_Connecting_.ino">WiFi-Credentials-Saving---Connecting  </a>
+   
+      This repository contains the code for entering WiFi credentials on your ESP over the air    
+    
+      
       
 
 
