@@ -25,6 +25,11 @@ popular repositories
 * <a href="https://github.com/techiesms/Home-Automation-based-on-Local-MQTT-server-using-Raspberry-Pi-and-Nodemcu-Board/blob/master/Adafruit_MQTT_Library-master/examples/mqtt_esp8266/mqtt_esp8266.ino">Home-Automation-based-on-Local-MQTT-server-using-Raspberry-Pi-and-Nodemcu-Board</a>
    
       Code for Nodemcu as a MQTT Client
+
+
+* <a href="https://github.com/techiesms/MQTT-Client-Code-for-NodeMCU/blob/master/mqtt_esp8266/mqtt_esp8266.ino">MQTT-Client-Code-for-NodeMCU</a>
+
+      This repo contains the code for MQTT client used in NodeMCU board. The broker I used for this project is from Reyax
       
 
 * <a href="https://github.com/techiesms/WiFi-Credentials-Saving---Connecting/blob/master/WiFi_Credentials_Saving_and_Connecting_/WiFi_Credentials_Saving_and_Connecting_.ino">WiFi-Credentials-Saving---Connecting  </a>
