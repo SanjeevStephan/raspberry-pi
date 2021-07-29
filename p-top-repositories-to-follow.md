@@ -18,6 +18,16 @@ popular repositories
    
       This repo contains the code for NodeMCU board which will act as a WebServer
 
+* <a href="https://github.com/techiesms/WiFi-Bluetooth-Automation">WiFi-Bluetooth-Automation</a>
+   
+      This repo contains the code for the project called WiFi & Bluetooth Controlled Home Automation
+
+* <a href="https://github.com/techiesms/Home-Automation-based-on-Local-MQTT-server-using-Raspberry-Pi-and-Nodemcu-Board/blob/master/Adafruit_MQTT_Library-master/examples/mqtt_esp8266/mqtt_esp8266.ino">Home-Automation-based-on-Local-MQTT-server-using-Raspberry-Pi-and-Nodemcu-Board</a>
+   
+      Code for Nodemcu as a MQTT Client
+      
+      
+
 
 
    
