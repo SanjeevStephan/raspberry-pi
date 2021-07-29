@@ -7,14 +7,19 @@ This repository contains files such as Script | Tools | Worldlist | Settings and
 ![Linux File System](https://lcom.static.linuxfound.org/sites/lcom/files/standard-unix-filesystem-hierarchy.png)
 
 
+## Arduino
+Programmable single-board microcontrollers board
+          
+     sudo apt-get install arduino
+     
+* <a href="http://https://www.arduino.cc//">www.arduino.cc</a>     
+
 ## Figlet
 Simple tool to light up the terminal through its funky fonts
           
      sudo apt-get install figlet
 
-* <a href="https://github.com/SanjeevStephan/Kali-Linux/blob/master/etc/apt/sources.list">/etc/apt/sources.lst </a>
-* <a href="https://github.com/SanjeevStephan/Kali-Linux/blob/master/root/alias">/root/alias </a> 
-* <a href="https://github.com/SanjeevStephan/Kali-Linux/blob/master/root/bashrc">/root/.bashrc </a>
+* <a href="http://www.figlet.org/">www.figlet.org</a>
 
 ## Important Linux Directory
 * <a href="https://github.com/SanjeevStephan/Kali-Linux/tree/master/var/www/html">/var/www/html</a> 
