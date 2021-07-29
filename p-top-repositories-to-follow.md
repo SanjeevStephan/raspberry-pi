@@ -14,7 +14,7 @@ popular repositories
     https://github.com/techiesms
     
 popular repositories
-* <a href="https://github.com/techiesms/ESP8266-WebServer-Code">ESP8266-WebServer-Code</a>
+* <a href="https://github.com/techiesms/ESP8266-WebServer-Code">ESP8266-WebServer-Code</a> 
    
       This repo contains the code for NodeMCU board which will act as a WebServer
 
@@ -26,6 +26,9 @@ popular repositories
    
       Code for Nodemcu as a MQTT Client
 
+* <a href="https://github.com/techiesms/ESP8266-Smart-Config/blob/master/Sonoff_with_Smart_Config/Sonoff_with_Smart_Config.ino">ESP8266-Smart-Config with Adafruit_MQTT</a>
+      
+       This repo contains the code for MQTT client used in NodeMCU board. The broker I used for this project is from Adafruit_IO
 
 * <a href="https://github.com/techiesms/MQTT-Client-Code-for-NodeMCU/blob/master/mqtt_esp8266/mqtt_esp8266.ino">MQTT-Client-Code-for-NodeMCU</a>
 
