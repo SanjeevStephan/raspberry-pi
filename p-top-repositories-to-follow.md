@@ -14,9 +14,9 @@ popular repositories
     https://github.com/techiesms
     
 popular repositories
-* <a href="https://github.com/the-raspberry-pi-guy/lcd">lcd</a>
+* <a href="https://github.com/techiesms/ESP8266-WebServer-Code">ESP8266-WebServer-Code</a>
    
-      This repository contains all of the code for interfacing with a 16x2 Character I2C LCD Display. 
+      This repo contains the code for NodeMCU board which will act as a WebServer
 
 
 
