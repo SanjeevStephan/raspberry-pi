@@ -1,7 +1,7 @@
 # raspberry-pi
 Contains Commands,Scripts,GPIO Hacks,Tips&amp;Tricks and android apps for the Raspberry Pi (Credit-Sized Computer)
 
-![Kali Linux Figlet](https://github.com/SanjeevStephan/Figlets/blob/master/images/figlet-kali-linux.jpg) <br/>
+![Raspberry Pi Figlet](https://github.com/SanjeevStephan/Github-Figlets-Typography/blob/master/images/figlet-raspberry-pi.png) <br/>
 This repository contains files such as Script | Tools | Worldlist | Settings and Much More which can later be used to restore the Linux System.If and when needed. 
 
 ![Linux File System](https://lcom.static.linuxfound.org/sites/lcom/files/standard-unix-filesystem-hierarchy.png)
