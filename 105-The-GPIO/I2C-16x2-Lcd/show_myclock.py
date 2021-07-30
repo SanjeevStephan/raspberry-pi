@@ -17,7 +17,7 @@ from subprocess import check_output  ## to display system info such as ip addres
 display = drivers.Lcd()
 #Command to fetch ip address and store under the variable name IP
 IP = check_output(["hostname", "-I"]).split()[0]
-
+ 
 try:
     print("Writing to display")
    # display.lcd_display_string("No time to waste", 1)  # Write line of text to first line of display
