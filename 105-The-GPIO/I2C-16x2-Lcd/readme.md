@@ -23,10 +23,10 @@ You can buy one of these great little I2C LCD on eBay or somewhere like [the Pi 
   sudo ./install.sh
   ```
 
-* After rebooting, try one of the [**demos**](#demos)
+* After rebooting, try one of the [**demos**](<a href="https://github.com/SanjeevStephan/raspberry-pi/blob/main/105-The-GPIO/I2C-16x2-Lcd/show_myclock.py">show_myclock.py</a>)
   ``` 
   cd /home/pi/lcd/
-  ./demo_clock.py
+  ./show_myclock.py
   ```
 
 # Demos
