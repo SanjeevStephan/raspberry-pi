@@ -1,0 +1,493 @@
+    1  ifconfig
+    2  service smbd status
+    3  history
+    4  ifconfig
+    5  clear
+    6  history
+    7  ifconfig
+    8  history
+    9  ifconfig
+   10  service ssh statsu
+   11  service ssh status
+   12  clear
+   13  history
+   14  service ssh start
+   15  service ssh status
+   16  ifconfig
+   17  service apache2 status
+   18  ifconfig
+   19  service apache2 restart
+   20  sudo service apache2 restart
+   21  cd /media/pi/SDCARD
+   22  ls -n
+   23  cd raspberry.os/
+   24  ls -n
+   25  cd default.pi/
+   26  mkdir /etc/apache2/sites-available
+   27  mkdir media/pi/SDCARD/raspberry.os/default.pi//etc/apache2/sites-available
+   28  sudo apt-get install apache2
+   29  sudo apt-get install apache2 -y
+   30  cat /etc/apache2/apache2.conf |grep DocumentRoot
+   31  cat /etc/apache2/apache2.conf | grep DocumentRoot
+   32  cat /etc/apache2/apache2.conf
+   33  cat /etc/apache2/sites-available/000-default.conf | grep DocumentRoot
+   34  sudo mousepad /etc/apache2/sites-available/000-default.conf 
+   35  sudo mousepad apache2.conf 
+   36  cd ..
+   37  ls -n
+   38  chmod --help
+   39  chown --help
+   40  cd ..
+   41  ls -n
+   42  sudo apache2 restart
+   43  sudo service apache2 restart
+   44  sudo service apache stop
+   45  sudo service apache2 stop
+   46  sudo service apache2 status
+   47  sudo service apache2 start
+   48  cd ..
+   49  sudo mount /media/pi/SDCARD/ /home/pi/sdpi/
+   50  fdisk -l
+   51  sudo fdisk -l
+   52  how to share sdcard on linux onver network
+   53  ifconfig
+   54  route -ne
+   55  ping 192.168.43.49
+   56  service apache2 status
+   57  ping google.com
+   58  cd ..
+   59  ls -n
+   60  ls --help
+   61  ls -help
+   62  ls -h
+   63  ls -n
+   64  ls -l
+   65  sudo chmod -R 775 /media/pi/SDCARD/localhost.pi.website/
+   66  sudo chown -R user:group /media/pi/SDCARD/localhost.pi.website/
+   67  sudo service apache2 restart
+   68  sudo mousepad /etc/apache2/apache2.conf 
+   69  sudo mousepad /etc/apache2/sites-available/000-default.conf 
+   70  service apache2 status
+   71  ifconfig
+   72  service apache2 restart
+   73  sudo service apache2 restart
+   74  sudo service apache2 status
+   75  sudo service apache2 restart
+   76  cat /etc/apache2/sites-available/000-default.conf | grep DocumentRoot
+   77  ifconfig
+   78  cd /media/pi/SDCARD/
+   79  LS -N
+   80  ls -n
+   81  mkdir myscripts
+   82  ls -n
+   83  cd myscripts/
+   84  mousepad helloworld.sh
+   85  cd /media/pi/SDCARD/
+   86  ls -n
+   87  cd myscripts/
+   88  ls -n
+   89  chmod -R 755 helloworld.sh 
+   90  ls -n
+   91  ls
+   92  ls -l
+   93  sh helloworld.sh 
+   94  nano pkg_installer.sh
+   95  cat pkg_installer.sh 
+   96  sh pkg_installer.sh 
+   97  nano pkg_installer.sh 
+   98  cat pkg_installer.sh 
+   99  sh pkg_installer.sh 
+  100  nano pkg_installer.sh 
+  101  cat pkg_installer.sh 
+  102  sh pkg_installer.sh 
+  103  sudo apt-get upgrade -y
+  104  rasp-config
+  105  sudo rasp-config
+  106  sudo apt-get update && upgrade -y
+  107  shutdown now
+  108  ifconfig | grep inet
+  109  ifconfig | grep wlan0 inet
+  110  ifconfig | grep wlan0
+  111  ifconfig | grep 19
+  112  pinout
+  113  cd /media/pi
+  114  ls -n
+  115  cd SDCARD
+  116  ls -n
+  117  cd gpio/
+  118  ls -n
+  119  cd ..
+  120  mkdir git.clone
+  121  ls -n
+  122  cd git.clone/
+  123  ls -n
+  124  sudo git clone https://github.com/the-raspberry-pi-guy/lcd
+  125  ls -n
+  126  cd lcd/
+  127  ls -n
+  128  sudo sh install.sh 
+  129  sh install.sh 
+  130  sudo sh install.sh 
+  131  sudo
+  132  su
+  133  ls -n
+  134  ./imgs/
+  135  ./install.sh
+  136  sudo ./install.sh
+  137  sudo
+  138  su
+  139  service apache2 status
+  140  service apache2 stop
+  141  service apache2 status
+  142  sudo
+  143  su
+  144  sudo sh install.sh 
+  145  sudo bash
+  146  ls -n
+  147  cd lcd
+  148  ls -n
+  149  sudo sh install.sh 
+  150  history
+  151  cd 
+  152  sudo git clone https://github.com/the-raspberry-pi-guy/lcd
+  153  sudo sh /home/pi/lcd/install.sh 
+  154  cd /home/pi/lcd/
+  155  ls -n
+  156  sudo sh install.sh 
+  157  pinout
+  158  history
+  159  cd /media/pi/SDCARD/
+  160  ls -n
+  161  mkdir cmd_history
+  162  cd cmd_history/
+  163  ls -n
+  164  history > history_27072021.txt
+  165  cat history_27072021.txt 
+  166  clear
+  167  shutdown now
+  168  cd /lcd
+  169  cd /media/pi/lcd
+  170  ls -n
+  171  cd /cd 
+  172  cd /media/pi
+  173  ls -n
+  174  CD SDCARD1/
+  175  cd SDCARD1
+  176  ls -n
+  177  cd /
+  178  cd 
+  179  cd /home/
+  180  cd pi/
+  181  ls -n
+  182  cd lcd/
+  183  ls -n
+  184  python demo_lcd_backlight.py 
+  185  shutdown now
+  186  service apache2 status
+  187  ifconfig
+  188  pinout
+  189  sudo python
+  190  cd /home/pi/lcd
+  191  ls -n
+  192  python demo_clock.py 
+  193  python demo_clock_and_IP.py 
+  194  python demo_clock.py 
+  195  ls
+  196  python demo_clock.py
+  197  cd /home/pi/lcd
+  198  python demo_clock.py
+  199  cd /home/pi
+  200  cd lcd
+  201  ls -n
+  202  sudo python demo_lcd_backlight.py 
+  203  ls -n
+  204  python demo_clock_and_IP.py 
+  205  cat demo_clock_and_IP.py 
+  206  python demo_clock_and_IP.py 
+  207  cat demo_clock_and_IP.py 
+  208  python demo_clock_and_IP.py 
+  209  ls -n
+  210  python demo_netmonit.py 
+  211  cat demo_netmonit.py 
+  212  ls -n
+  213  ln demo_clock_and_IP.py /home/pi/Desktop/ip_on_lcd.link
+  214  ln demo_clock_and_IP.py /home/pi/Desktop/ip_on_lcd.py
+  215  ln demo_clock_and_IP.py /home/pi/Desktop/ip_on_lcd
+  216  sudo ln demo_clock_and_IP.py /home/pi/Desktop/ip_on_lcd
+  217  ls -n
+  218  python demo_scrolling_text.py 
+  219  cat demo_scrolling_text.py 
+  220  ls -n
+  221  python demo_clock.py 
+  222  python demo_clock_and_IP.py 
+  223  shutdown now
+  224  service ssh status
+  225  service ssh start
+  226  service ssh status
+  227  cd /home/pi/lcd
+  228  python demo_clock.py
+  229  ls -n
+  230  cat demo_lcd_simple_strings.py 
+  231  cd 
+  232  cd stephan/
+  233  ls -n
+  234  nano hellolcd.py
+  235  cat hellolcd.py 
+  236  ls -n
+  237  python hellolcd.py 
+  238  mv /home/pi/stephan/hellolcd.py /home/pi/lcd/
+  239  sudo mv /home/pi/stephan/hellolcd.py /home/pi/lcd/
+  240  cd /home/pi/lcd
+  241  ls -n
+  242  python hellolcd.py 
+  243  rasp-config
+  244  rasb-config
+  245  history
+  246  python demo_clock_and_IP.py 
+  247  python demo_clock.py 
+  248  shutdown now
+  249  service ssh status
+  250  rasp-config
+  251  sudo raspbian-config
+  252  history
+  253  sudo raspi-config
+  254  cd /home/pi/lcd
+  255  ls -n
+  256  python demo_clock.py 
+  257  sudo sh install.sh 
+  258  python demo_clock.py 
+  259  cd /home/pi/lcd
+  260  python demo_clock.py 
+  261  cd /home/pi/lcd
+  262  python demo_clock.py 
+  263  cat /root/.bashrc
+  264  sudo cat /root/.bashrc
+  265  ls -n
+  266  sudo cat /root/.bashrc
+  267  apt-get install figlet
+  268  sudo apt-get install figlet
+  269  sudo nano /root/.bashrc
+  270  sudo cat /root/.bashrc
+  271  sudo apt-get install setaf
+  272  clear
+  273  sudo /root/.bashrc
+  274  sudo nano /root/.bashrc
+  275  cat /root/.bashrc
+  276  sudo /root/.bashrc
+  277  sudo cat /root/.bashrc
+  278  cd /home/pi/lcd
+  279  sudo python demo_clock.py 
+  280  cp demo_clock.py demo_clock_modified.py
+  281  sudo cp demo_clock.py /home/pi/lcd/demo_clock_edited.py
+  282  ls -n
+  283  cat demo_clock_edited.py 
+  284  python demo_clock_edited.py 
+  285  nano demo_clock_edited.py 
+  286  cd /home/pi/stephan/
+  287  ls -n
+  288  mkdir scripts
+  289  cd scripts/
+  290  nano sample_date-formate.py
+  291  python sample_date-formate.py 
+  292  cd /home/pi/lcd
+  293  sudo nano demo_clock_edited.py 
+  294  sudo mousepad demo_clock_edited.py 
+  295  cat demo_clock_edited.py 
+  296  python demo_clock_edited.py 
+  297  sudo nano demo_clock_edited.py 
+  298  cd /home/pi/stephan/
+  299  sudo nano show_hostname_n_ip_add.py
+  300  sudo python show_hostname_n_ip_add.py 
+  301  cat /home/pi/lcd/demo_clock_and_IP.py 
+  302  ls -n
+  303  cd /home/pi
+  304  ls -n
+  305  sudo service ssh status
+  306  ifconfig
+  307  cd /home/pi/lcd
+  308  python demo_clock_edited.py 
+  309  mv -i demo_clock_edited.py myclock.py
+  310  sudo mv -i demo_clock_edited.py myclock.py
+  311  python myclock.py 
+  312  sudo nano myclock.py 
+  313  python myclock.py 
+  314  sudo nano myclock.py 
+  315  sudo python myclock.py 
+  316  sudo nano myclock.py 
+  317  sudo python myclock.py 
+  318  sudo nano myclock.py 
+  319  sudo python myclock.py 
+  320  sudo python /home/pi/lcd/myclock.py
+  321  pinouy
+  322  pinout
+  323  cd /home/pi/stephan/gpio
+  324  cd /home/pi
+  325  cd stephan/
+  326  ls -n
+  327  mkdir gpio
+  328  cd gipo
+  329  cd gpio
+  330  ls -n
+  331  sudo nano led_blink.py
+  332  ls -n
+  333  sudo chomd +x led_blink.py 
+  334  sudo chown +x led_blink.py 
+  335  sudo chown +X led_blink.py 
+  336  sudo chown +R led_blink.py 
+  337  sudo python led_blink.py 
+  338  sudo nano led_blink.py 
+  339  python led_blink.py 
+  340  sudo nano led_blink.py 
+  341  python led_blink.py 
+  342  sudo nano  led_blink.py 
+  343  nano led_blink.py 
+  344  sudo nano led_blink.py 
+  345  python led_blink.py 
+  346  sudo nano led_blink.py 
+  347  python led_blink.py 
+  348  sudo python
+  349  sudo nano led_blink.py 
+  350  python led_blink.py 
+  351  lxterm
+  352  xterm-open
+  353  xter,
+  354  xterm
+  355  ls -n
+  356  efkd
+  357  sudo python /home/pi/lcd/myclock.py &
+  358  ls -n
+  359  cd /home/pi
+  360  ls -n
+  361  ce /stephan
+  362  cd /stephan
+  363  cd /home/pi/stephan
+  364  cd gpio
+  365  ls -n
+  366  python led_blink.py 
+  367  cd /home/pi
+  368  ls -n
+  369  cat high.txt 
+  370  ls -n
+  371  sudo python /home/pi/lcd/myclock.py
+  372  sudo /sbin/shutdobe../
+  373  sudo /sbin/shutdown -h now
+  374  sudo python /home/pi/lcd/myclock.py
+  375  sudo xdg-open /home/pi
+  376  xterm echo "hi"
+  377  xdg-open /home/pi
+  378  mkdir /home/pi/hostpi
+  379  mount -B /home/pi/localpi /home/pi/hostpi
+  380  sudo mount -B /home/pi/localpi /home/pi/hostpi
+  381  xdg-open /home/pi
+  382  git remote add origin https://github.com/SanjeevStephan/raspberry-pi.git
+  383  sudo git remote add origin https://github.com/SanjeevStephan/raspberry-pi.git
+  384  udo mount -B /home/pi/localpi /home/pi/hostpi
+  385  ls -n
+  386  cd /home/pi/stephan
+  387  cd /home/pi
+  388  ls -n /home/pi/stephan
+  389  sudo /home/pi
+  390  sudo cd /home/pi
+  391  cd /home
+  392  cd pi
+  393  cd /home/pi
+  394  cd home
+  395  cd /home
+  396  cd /pi
+  397  sudo python /home/pi/lcd/myclock.py
+  398  ls -n
+  399  cd /home/pi
+  400  cd home
+  401  cd /home
+  402  cd Stephan
+  403  cd /home/pi/
+  404  cd /home/Stephan
+  405  cd /home
+  406  ls-n
+  407  ls -n
+  408  sudo xdg-open /home/pi
+  409  cd /home/pi/Stephan
+  410  ls -n
+  411  cd gpio/
+  412  ls -n
+  413  cat led_blink.py 
+  414  cd ..
+  415  ls -n
+  416  cat show_hostname_n_ip_add.py 
+  417  cd /hoem
+  418  cd ..
+  419  ls -n
+  420  cd /home/pi/
+  421  ls -n
+  422  cd lcd
+  423  ls -n
+  424  cat demo_clock_and_IP.py 
+  425  sudo python /home/pi/lcd/myclock.py
+  426  python /home/pi/Stephan/gpio/led_blink.py
+  427  sudo python /home/pi/lcd/myclock.py
+  428  cd /home/
+  429  cd Stephan
+  430  ls -n
+  431  cd /home/pi/Stephan
+  432  cd gpio
+  433  ls -n
+  434  cp led_light.py led_light_on.py
+  435  ls -
+  436  ls -n
+  437  mv -i led_light.py led_light_off.py
+  438  ls -n
+  439  sudo namo led_light_off.py 
+  440  sudo nano led_light_off.py 
+  441  python /home/pi/Stephan/gpio/led_blink_off.py
+  442  python /home/pi/Stephan/gpio/led_light_off.py
+  443  home/pi/Stephan/gpio/led_light_on.py
+  444  python /home/pi/Stephan/gpio/led_light_on.py
+  445  python /home/pi/Stephan/gpio/led_light_off.py
+  446  python /home/pi/Stephan/gpio/led_light_on.py
+  447  python /home/pi/Stephan/gpio/led_light_off.py
+  448  sudo python /home/pi/lcd/myclock.py
+  449  cd /home/pi
+  450  cd /home
+  451  ls -n
+  452  cd pi
+  453  cd /home/pi/Stephan
+  454  ls -n
+  455  cd scripts/
+  456  ls -n
+  457  cd ..
+  458  cd gpio/
+  459  ls -n
+  460  python led_blink.py 
+  461  cp led_blink.py led_light.py
+  462  ls -n
+  463  sudo nano led_light.py 
+  464  sudo python led_light.py 
+  465  sudo nano led_light.py 
+  466  sudo python led_light.py 
+  467  python /home/pi/Stephan/gpio/led_light_on.py
+  468  python /home/pi/Stephan/gpio/led_light_off.py
+  469  python /home/pi/Stephan/gpio/led_light_on.py
+  470  python /home/pi/Stephan/gpio/led_light_off.py
+  471  sudo python /home/pi/lcd/myclock.py
+  472  sudo service ssh status
+  473  exit
+  474  systeminfo
+  475  sysinfo
+  476  info
+  477  sudo apt-get install arduino
+  478  figlet "Stephan"
+  479  figlet "Raspberry Pi"
+  480  cat 000-default.conf 
+  481  history
+  482  history | grep "apt-get"
+  483  cd /
+  484  cd /home/pi
+  485  ls -n
+  486  rm arduino-nightly-linuxarm.tar.xz 
+  487  ls -n
+  488  ls -n Stephan/
+  489  mv -i Stephan/ stephan
+  490  ls -n
+  491  ls -n stephan/
+  492  mkdir stephan/cmd_history
+  493  history >> stephan/cmd_history/history_29072021

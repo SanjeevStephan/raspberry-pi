@@ -1,0 +1,379 @@
+pi@raspberrypi:~ $ sudo nano /lib/systemd/system/rpi-netmonitor.service
+
+pi@raspberrypi:~ $ sudo move -i /lib/systemd/system/rpi-
+rpi-display-backlight.service  rpi-netmonitor.service
+rpi-eeprom-update.service      
+pi@raspberrypi:~ $ sudo move -i /lib/systemd/system/rpi-
+rpi-display-backlight.service  rpi-netmonitor.service
+rpi-eeprom-update.service      
+pi@raspberrypi:~ $ sudo move -i /lib/systemd/system/rpi-netmonitor.service pi-clock-on-lcd.service
+sudo: move: command not found
+pi@raspberrypi:~ $ sudo move -i /lib/systemd/system/rpi-netmonitor.service /lib/systemd/system/pi-clock-on-lcd.service
+sudo: move: command not found
+pi@raspberrypi:~ $ cd /lib/systemd/system
+
+pi@raspberrypi:/lib/systemd/system $ ls -n | grep rpi-netmonitor.service 
+-rw-r--r-- 1 0 0  258 Jul 30 17:02 rpi-netmonitor.service
+pi@raspberrypi:/lib/systemd/system $ sudo cp rpi-netmonitor.service pi-clock.service
+pi@raspberrypi:/lib/systemd/system $ cat pi-clock.service 
+[Unit]
+Description=Show Current Time and An Pi IP Address  on a 16x2 LCD
+
+[Service]
+Type=simple
+User=pi
+
+ExecStart=/usr/bin/python /home/pi/lcd/myclock.py
+
+Restart=always
+RestartSec=5
+
+KillMode=process
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
+pi@raspberrypi:/lib/systemd/system $ rm rpi-netmonitor.service 
+rm: remove write-protected regular file 'rpi-netmonitor.service'? 
+pi@raspberrypi:/lib/systemd/system $ sudo rm rpi-netmonitor.service 
+pi@raspberrypi:/lib/systemd/system $ ls -n
+total 1072
+-rw-r--r-- 1 0 0  502 Mar 18 21:06 alsa-restore.service
+-rw-r--r-- 1 0 0  475 Mar 18 21:06 alsa-state.service
+lrwxrwxrwx 1 0 0    9 Mar 18 21:06 alsa-utils.service -> /dev/null
+-rw-r--r-- 1 0 0  395 Jun 10 15:43 apache2.service
+-rw-r--r-- 1 0 0  467 Jun 10 15:43 apache2@.service
+-rw-r--r-- 1 0 0  603 Sep  1  2020 apache-htcacheclean.service
+-rw-r--r-- 1 0 0  612 Sep  1  2020 apache-htcacheclean@.service
+-rw-r--r-- 1 0 0 1162 Mar 30  2019 apparmor.service
+-rw-r--r-- 1 0 0  332 Jul 17  2017 apply_noobs_os_config.service
+-rw-r--r-- 1 0 0  326 Apr 19 22:11 apt-daily.service
+-rw-r--r-- 1 0 0  156 Apr 19 22:11 apt-daily.timer
+-rw-r--r-- 1 0 0  389 Apr 19 22:11 apt-daily-upgrade.service
+-rw-r--r-- 1 0 0  184 Apr 19 22:11 apt-daily-upgrade.timer
+-rw-r--r-- 1 0 0  686 Aug  3  2016 auth-rpcgss-module.service
+lrwxrwxrwx 1 0 0   14 Apr  1 18:27 autovt@.service -> getty@.service
+-rw-r--r-- 1 0 0 1044 Feb 14 01:05 avahi-daemon.service
+-rw-r--r-- 1 0 0  870 Feb 14 01:05 avahi-daemon.socket
+-rw-r--r-- 1 0 0  919 Feb 14  2019 basic.target
+-rw-r--r-- 1 0 0  420 Jul 29  2020 bluetooth.service
+-rw-r--r-- 1 0 0  419 Feb 14  2019 bluetooth.target
+-rw-r--r-- 1 0 0  455 Feb 14  2019 boot-complete.target
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 bootlogd.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 bootlogs.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 bootmisc.service -> /dev/null
+-rw-r--r-- 1 0 0  214 May 21 20:05 bthelper@.service
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 checkfs.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 checkroot-bootclean.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 checkroot.service -> /dev/null
+-rw-r--r-- 1 0 0  169 Feb 22  2019 clean-mount-point@.service
+-rw-r--r-- 1 0 0  298 Jan 22  2019 colord.service
+-rw-r--r-- 1 0 0  150 Dec 27  2018 configure-printer@.service
+-rw-r--r-- 1 0 0 1082 Apr  1 18:27 console-getty.service
+-rw-r--r-- 1 0 0  312 Oct 10  2016 console-setup.service
+-rw-r--r-- 1 0 0 1263 Apr  1 18:27 container-getty@.service
+-rw-r--r-- 1 0 0  316 Oct 11  2019 cron.service
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 cryptdisks-early.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 cryptdisks.service -> /dev/null
+-rw-r--r-- 1 0 0  465 Feb 14  2019 cryptsetup-pre.target
+-rw-r--r-- 1 0 0  412 Feb 14  2019 cryptsetup.target
+lrwxrwxrwx 1 0 0   13 Apr  1 18:27 ctrl-alt-del.target -> reboot.target
+-rw-r--r-- 1 0 0  234 Dec 17  2018 cups-browsed.service
+-rw-r--r-- 1 0 0  142 Nov 28  2020 cups.path
+-rw-r--r-- 1 0 0  194 Nov 28  2020 cups.service
+-rw-r--r-- 1 0 0  132 Nov 28  2020 cups.socket
+lrwxrwxrwx 1 0 0   25 Apr  1 18:27 dbus-org.freedesktop.hostname1.service -> systemd-hostnamed.service
+lrwxrwxrwx 1 0 0   23 Apr  1 18:27 dbus-org.freedesktop.locale1.service -> systemd-localed.service
+lrwxrwxrwx 1 0 0   22 Apr  1 18:27 dbus-org.freedesktop.login1.service -> systemd-logind.service
+lrwxrwxrwx 1 0 0   25 Apr  1 18:27 dbus-org.freedesktop.timedate1.service -> systemd-timedated.service
+-rw-r--r-- 1 0 0  380 Jul  5  2020 dbus.service
+-rw-r--r-- 1 0 0  106 Jul  5  2020 dbus.socket
+-rw-r--r-- 1 0 0 1086 Apr  1 18:27 debug-shell.service
+lrwxrwxrwx 1 0 0   16 Apr  1 18:27 default.target -> graphical.target
+-rw-r--r-- 1 0 0  750 Feb 14  2019 dev-hugepages.mount
+-rw-r--r-- 1 0 0  665 Feb 14  2019 dev-mqueue.mount
+-rw-r--r-- 1 0 0  260 Nov 13  2019 dhcpcd.service
+-rw-r--r-- 1 0 0  313 Aug  9  2018 dphys-swapfile.service
+-rw-r--r-- 1 0 0  797 Apr  1 18:27 emergency.service
+-rw-r--r-- 1 0 0  471 Feb 14  2019 emergency.target
+-rw-r--r-- 1 0 0  541 Feb 14  2019 exit.target
+-rw-r--r-- 1 0 0  379 Sep 10  2018 fake-hwclock.service
+-rw-r--r-- 1 0 0  480 Feb 14  2019 final.target
+-rw-r--r-- 1 0 0  236 Nov 28  2018 fio.service
+-rw-r--r-- 1 0 0  151 Jan 10  2019 fstrim.service
+-rw-r--r-- 1 0 0  170 Jan 10  2019 fstrim.timer
+-rw-r--r-- 1 0 0  506 Feb 14  2019 getty-pre.target
+-rw-r--r-- 1 0 0 1975 Apr  1 18:27 getty@.service
+-rw-r--r-- 1 0 0  342 Apr  1 18:27 getty-static.service
+-rw-r--r-- 1 0 0  500 Feb 14  2019 getty.target
+drwxr-xr-x 2 0 0 4096 May  7 20:10 getty.target.wants
+-rw-r--r-- 1 0 0  174 Aug  2  2019 gldriver-test.service
+-rw-r--r-- 1 0 0  598 Feb 14  2019 graphical.target
+drwxr-xr-x 2 0 0 4096 May  7 20:10 graphical.target.wants
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 halt.service -> /dev/null
+-rw-r--r-- 1 0 0  527 Feb 14  2019 halt.target
+drwxr-xr-x 2 0 0 4096 May  7 20:17 halt.target.wants
+-rw-r--r-- 1 0 0  253 May 21 20:05 hciuart.service
+-rw-r--r-- 1 0 0  509 Feb 14  2019 hibernate.target
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 hostname.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 hwclock.service -> /dev/null
+-rw-r--r-- 1 0 0  530 Feb 14  2019 hybrid-sleep.target
+-rw-r--r-- 1 0 0  442 Aug 25  2018 ifupdown-pre.service
+-rw-r--r-- 1 0 0  279 Aug 25  2018 ifupdown-wait-online.service
+-rw-r--r-- 1 0 0  552 Aug 25  2018 ifup@.service
+-rw-r--r-- 1 0 0  670 Apr  1 18:27 initrd-cleanup.service
+-rw-r--r-- 1 0 0  593 Feb 14  2019 initrd-fs.target
+-rw-r--r-- 1 0 0  830 Apr  1 18:27 initrd-parse-etc.service
+-rw-r--r-- 1 0 0  561 Feb 14  2019 initrd-root-device.target
+-rw-r--r-- 1 0 0  566 Feb 14  2019 initrd-root-fs.target
+-rw-r--r-- 1 0 0  589 Apr  1 18:27 initrd-switch-root.service
+-rw-r--r-- 1 0 0  777 Feb 14  2019 initrd-switch-root.target
+drwxr-xr-x 2 0 0 4096 May  7 20:17 initrd-switch-root.target.wants
+-rw-r--r-- 1 0 0  763 Feb 14  2019 initrd.target
+-rw-r--r-- 1 0 0  704 Apr  1 18:27 initrd-udevadm-cleanup-db.service
+-rw-r--r-- 1 0 0  541 Feb 14  2019 kexec.target
+drwxr-xr-x 2 0 0 4096 May  7 20:17 kexec.target.wants
+-rw-r--r-- 1 0 0  287 Oct 10  2016 keyboard-setup.service
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 killprocs.service -> /dev/null
+lrwxrwxrwx 1 0 0   28 Apr  1 18:27 kmod.service -> systemd-modules-load.service
+-rw-r--r-- 1 0 0  717 Apr  1 18:27 kmod-static-nodes.service
+-rw-r--r-- 1 0 0  689 Feb 22  2019 lightdm.service
+-rw-r--r-- 1 0 0  435 Feb 14  2019 local-fs-pre.target
+-rw-r--r-- 1 0 0  547 Feb 14  2019 local-fs.target
+drwxr-xr-x 2 0 0 4096 May  7 20:10 local-fs.target.wants
+-rw-r--r-- 1 0 0  695 Aug 29  2018 logrotate.service
+-rw-r--r-- 1 0 0  192 Jan  4  2018 logrotate.timer
+-rw-r--r-- 1 0 0  445 Feb 14  2019 machine.slice
+-rw-r--r-- 1 0 0  482 Feb 10  2019 man-db.service
+-rw-r--r-- 1 0 0  164 Feb 10  2019 man-db.timer
+lrwxrwxrwx 1 0 0   28 Apr  1 18:27 module-init-tools.service -> systemd-modules-load.service
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 motd.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 mountall-bootclean.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 mountall.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 mountdevsubfs.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 mountkernfs.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 mountnfs-bootclean.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 mountnfs.service -> /dev/null
+-rw-r--r-- 1 0 0  532 Feb 14  2019 multi-user.target
+drwxr-xr-x 2 0 0 4096 May  7 20:17 multi-user.target.wants
+-rw-r--r-- 1 0 0  643 Aug 25  2018 networking.service
+-rw-r--r-- 1 0 0  505 Feb 14  2019 network-online.target
+-rw-r--r-- 1 0 0  502 Feb 14  2019 network-pre.target
+-rw-r--r-- 1 0 0  521 Feb 14  2019 network.target
+-rw-r--r-- 1 0 0  319 Jun 24  2020 nfs-client.target
+lrwxrwxrwx 1 0 0    9 Jun 24  2020 nfs-common.service -> /dev/null
+-rw-r--r-- 1 0 0  375 Jun 24  2020 nfs-config.service
+-rw-r--r-- 1 0 0  336 Jun 24  2020 nfs-idmapd.service
+-rw-r--r-- 1 0 0  567 Aug  3  2016 nfs-utils.service
+-rw-r--r-- 1 0 0 1131 Apr 29 20:07 nodered.service
+-rw-r--r-- 1 0 0  554 Feb 14  2019 nss-lookup.target
+-rw-r--r-- 1 0 0  513 Feb 14  2019 nss-user-lookup.target
+-rw-r--r-- 1 0 0  407 Mar  3  2019 packagekit-offline-update.service
+-rw-r--r-- 1 0 0  371 Mar  3  2019 packagekit.service
+-rw-r--r-- 1 0 0  394 Feb 14  2019 paths.target
+-rw-r--r-- 1 0 0  199 Jan 23  2015 paxctld.service
+-rw-r--r-- 1 0 0  258 Jul 30 17:05 pi-clock.service
+-rw-r--r-- 1 0 0  194 Feb  5 19:54 pigpiod.service
+-rw-r--r-- 1 0 0  413 Jun  5  2019 plymouth-halt.service
+-rw-r--r-- 1 0 0  427 Jun  5  2019 plymouth-kexec.service
+lrwxrwxrwx 1 0 0   27 Jun  5  2019 plymouth-log.service -> plymouth-read-write.service
+-rw-r--r-- 1 0 0  422 Jun  5  2019 plymouth-poweroff.service
+-rw-r--r-- 1 0 0  194 Jun  5  2019 plymouth-quit.service
+-rw-r--r-- 1 0 0  200 Jun  5  2019 plymouth-quit-wait.service
+-rw-r--r-- 1 0 0  244 Jun  5  2019 plymouth-read-write.service
+-rw-r--r-- 1 0 0  417 Jun  5  2019 plymouth-reboot.service
+lrwxrwxrwx 1 0 0   21 Jun  5  2019 plymouth.service -> plymouth-quit.service
+-rw-r--r-- 1 0 0  533 Jun  5  2019 plymouth-start.service
+-rw-r--r-- 1 0 0  291 Jun  5  2019 plymouth-switch-root.service
+-rw-r--r-- 1 0 0  175 Jan 15  2019 polkit.service
+lrwxrwxrwx 1 0 0   15 Sep  9  2019 portmap.service -> rpcbind.service
+-rw-r--r-- 1 0 0  592 Feb 14  2019 poweroff.target
+drwxr-xr-x 2 0 0 4096 May  7 20:17 poweroff.target.wants
+-rw-r--r-- 1 0 0  417 Feb 14  2019 printer.target
+-rw-r--r-- 1 0 0   98 Aug  3  2016 proc-fs-nfsd.mount
+lrwxrwxrwx 1 0 0   22 Apr  1 18:27 procps.service -> systemd-sysctl.service
+-rw-r--r-- 1 0 0  745 Feb 14  2019 proc-sys-fs-binfmt_misc.automount
+-rw-r--r-- 1 0 0  655 Feb 14  2019 proc-sys-fs-binfmt_misc.mount
+-rw-r--r-- 1 0 0  609 Apr  1 18:27 quotaon.service
+-rw-r--r-- 1 0 0  425 Apr 30  2019 raspberrypi-net-mods.service
+-rw-r--r-- 1 0 0  716 Apr  1 18:27 rc-local.service
+lrwxrwxrwx 1 0 0   16 Apr  1 18:27 rc.local.service -> rc-local.service
+drwxr-xr-x 2 0 0 4096 May  7 20:10 rc-local.service.d
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 rc.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 rcS.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 reboot.service -> /dev/null
+-rw-r--r-- 1 0 0  583 Feb 14  2019 reboot.target
+drwxr-xr-x 2 0 0 4096 May  7 20:17 reboot.target.wants
+-rw-r--r-- 1 0 0  403 Apr 29  2019 regenerate_ssh_host_keys.service
+-rw-r--r-- 1 0 0  549 Feb 14  2019 remote-cryptsetup.target
+-rw-r--r-- 1 0 0  436 Feb 14  2019 remote-fs-pre.target
+-rw-r--r-- 1 0 0  522 Feb 14  2019 remote-fs.target
+-rw-r--r-- 1 0 0  788 Apr  1 18:27 rescue.service
+-rw-r--r-- 1 0 0  184 Feb  1  2020 rescue-ssh.target
+-rw-r--r-- 1 0 0  492 Feb 14  2019 rescue.target
+drwxr-xr-x 2 0 0 4096 May  7 20:10 rescue.target.wants
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 rmnologin.service -> /dev/null
+-rw-r--r-- 1 0 0  626 Sep  9  2019 rpcbind.service
+-rw-r--r-- 1 0 0  325 Sep  9  2019 rpcbind.socket
+-rw-r--r-- 1 0 0  540 Feb 14  2019 rpcbind.target
+-rw-r--r-- 1 0 0  391 Jun 24  2020 rpc-gssd.service
+-rw-r--r-- 1 0 0  497 Jun 24  2020 rpc-statd-notify.service
+-rw-r--r-- 1 0 0  489 Jun 24  2020 rpc-statd.service
+-rw-r--r-- 1 0 0  515 Jun 24  2020 rpc-svcgssd.service
+-rw-r--r-- 1 0 0  348 Apr 11  2016 rpi-display-backlight.service
+-rw-r--r-- 1 0 0  200 Jul  7 18:55 rpi-eeprom-update.service
+-rw-r--r-- 1 0 0  255 Mar 15  2019 rsync.service
+-rw-r--r-- 1 0 0  435 Feb 26  2019 rsyslog.service
+-rw-r--r-- 1 0 0 1055 Feb 16  2018 rtkit-daemon.service
+lrwxrwxrwx 1 0 0   15 Apr  1 18:27 runlevel0.target -> poweroff.target
+lrwxrwxrwx 1 0 0   13 Apr  1 18:27 runlevel1.target -> rescue.target
+drwxr-xr-x 2 0 0 4096 Apr  1 18:27 runlevel1.target.wants
+lrwxrwxrwx 1 0 0   17 Apr  1 18:27 runlevel2.target -> multi-user.target
+drwxr-xr-x 2 0 0 4096 Apr  1 18:27 runlevel2.target.wants
+lrwxrwxrwx 1 0 0   17 Apr  1 18:27 runlevel3.target -> multi-user.target
+drwxr-xr-x 2 0 0 4096 Apr  1 18:27 runlevel3.target.wants
+lrwxrwxrwx 1 0 0   17 Apr  1 18:27 runlevel4.target -> multi-user.target
+drwxr-xr-x 2 0 0 4096 Apr  1 18:27 runlevel4.target.wants
+lrwxrwxrwx 1 0 0   16 Apr  1 18:27 runlevel5.target -> graphical.target
+drwxr-xr-x 2 0 0 4096 Apr  1 18:27 runlevel5.target.wants
+lrwxrwxrwx 1 0 0   13 Apr  1 18:27 runlevel6.target -> reboot.target
+-rw-r--r-- 1 0 0  146 Jun 24  2020 run-rpc_pipefs.mount
+lrwxrwxrwx 1 0 0    9 Mar 23  2019 saned.service -> /dev/null
+-rw-r--r-- 1 0 0  309 Aug 15  2018 saned@.service
+-rw-r--r-- 1 0 0  133 Aug 15  2018 saned.socket
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 sendsigs.service -> /dev/null
+-rw-r--r-- 1 0 0 1486 Apr  1 18:27 serial-getty@.service
+-rw-r--r-- 1 0 0  442 Feb 14  2019 shutdown.target
+-rw-r--r-- 1 0 0  402 Feb 14  2019 sigpwr.target
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 single.service -> /dev/null
+-rw-r--r-- 1 0 0  460 Feb 14  2019 sleep.target
+-rw-r--r-- 1 0 0  449 Feb 14  2019 slices.target
+-rw-r--r-- 1 0 0  420 Feb 14  2019 smartcard.target
+-rw-r--r-- 1 0 0  396 Feb 14  2019 sockets.target
+drwxr-xr-x 2 0 0 4096 May  7 20:12 sockets.target.wants
+-rw-r--r-- 1 0 0  420 Feb 14  2019 sound.target
+drwxr-xr-x 2 0 0 4096 May  7 20:12 sound.target.wants
+-rw-r--r-- 1 0 0  538 Feb  1  2020 ssh.service
+-rw-r--r-- 1 0 0  289 Feb  1  2020 ssh@.service
+-rw-r--r-- 1 0 0  216 Feb  1  2020 ssh.socket
+-rw-r--r-- 1 0 0  289 Jul 22  2019 sshswitch.service
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 stop-bootlogd.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 stop-bootlogd-single.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Jan 20  2021 sudo.service -> /dev/null
+-rw-r--r-- 1 0 0  503 Feb 14  2019 suspend.target
+-rw-r--r-- 1 0 0  577 Feb 14  2019 suspend-then-hibernate.target
+-rw-r--r-- 1 0 0  393 Feb 14  2019 swap.target
+-rw-r--r-- 1 0 0  795 Feb 14  2019 sys-fs-fuse-connections.mount
+-rw-r--r-- 1 0 0  558 Feb 14  2019 sysinit.target
+drwxr-xr-x 2 0 0 4096 May  7 20:17 sysinit.target.wants
+-rw-r--r-- 1 0 0  767 Feb 14  2019 sys-kernel-config.mount
+-rw-r--r-- 1 0 0  710 Feb 14  2019 sys-kernel-debug.mount
+-rw-r--r-- 1 0 0 1407 Feb 14  2019 syslog.socket
+-rw-r--r-- 1 0 0  722 Feb 14  2019 systemd-ask-password-console.path
+-rw-r--r-- 1 0 0  742 Apr  1 18:27 systemd-ask-password-console.service
+-rw-r--r-- 1 0 0  456 Jun  5  2019 systemd-ask-password-plymouth.path
+-rw-r--r-- 1 0 0  468 Jun  5  2019 systemd-ask-password-plymouth.service
+-rw-r--r-- 1 0 0  650 Feb 14  2019 systemd-ask-password-wall.path
+-rw-r--r-- 1 0 0  752 Apr  1 18:27 systemd-ask-password-wall.service
+-rw-r--r-- 1 0 0  752 Apr  1 18:27 systemd-backlight@.service
+-rw-r--r-- 1 0 0 1089 Apr  1 18:27 systemd-binfmt.service
+-rw-r--r-- 1 0 0  678 Apr  1 18:27 systemd-bless-boot.service
+-rw-r--r-- 1 0 0  718 Apr  1 18:27 systemd-boot-check-no-failures.service
+-rw-r--r-- 1 0 0  556 Feb 14  2019 systemd-exit.service
+-rw-r--r-- 1 0 0  551 Apr  1 18:27 systemd-fsckd.service
+-rw-r--r-- 1 0 0  540 Apr  1 18:27 systemd-fsckd.socket
+-rw-r--r-- 1 0 0  740 Apr  1 18:27 systemd-fsck-root.service
+-rw-r--r-- 1 0 0  741 Apr  1 18:27 systemd-fsck@.service
+-rw-r--r-- 1 0 0  584 Apr  1 18:27 systemd-halt.service
+-rw-r--r-- 1 0 0  671 Apr  1 18:27 systemd-hibernate-resume@.service
+-rw-r--r-- 1 0 0  541 Apr  1 18:27 systemd-hibernate.service
+-rw-r--r-- 1 0 0 1115 Apr  1 18:27 systemd-hostnamed.service
+-rw-r--r-- 1 0 0  818 Apr  1 18:27 systemd-hwdb-update.service
+-rw-r--r-- 1 0 0  559 Apr  1 18:27 systemd-hybrid-sleep.service
+-rw-r--r-- 1 0 0  566 Apr  1 18:27 systemd-initctl.service
+-rw-r--r-- 1 0 0  546 Feb 14  2019 systemd-initctl.socket
+-rw-r--r-- 1 0 0  647 Feb 14  2019 systemd-journald-audit.socket
+-rw-r--r-- 1 0 0 1130 Feb 14  2019 systemd-journald-dev-log.socket
+-rw-r--r-- 1 0 0 1442 Apr  1 18:27 systemd-journald.service
+-rw-r--r-- 1 0 0  882 Feb 14  2019 systemd-journald.socket
+-rw-r--r-- 1 0 0  735 Apr  1 18:27 systemd-journal-flush.service
+-rw-r--r-- 1 0 0  597 Apr  1 18:27 systemd-kexec.service
+-rw-r--r-- 1 0 0 1084 Apr  1 18:27 systemd-localed.service
+-rw-r--r-- 1 0 0 1450 Apr  1 18:27 systemd-logind.service
+-rw-r--r-- 1 0 0  733 Apr  1 18:27 systemd-machine-id-commit.service
+-rw-r--r-- 1 0 0 1007 Apr  1 18:27 systemd-modules-load.service
+-rw-r--r-- 1 0 0 1900 Apr  1 18:27 systemd-networkd.service
+-rw-r--r-- 1 0 0  631 Feb 14  2019 systemd-networkd.socket
+-rw-r--r-- 1 0 0  740 Apr  1 18:27 systemd-networkd-wait-online.service
+-rw-r--r-- 1 0 0  556 Feb 14  2019 systemd-poweroff.service
+-rw-r--r-- 1 0 0  655 Apr  1 18:27 systemd-quotacheck.service
+-rw-r--r-- 1 0 0  792 Apr  1 18:27 systemd-random-seed.service
+-rw-r--r-- 1 0 0  551 Feb 14  2019 systemd-reboot.service
+-rw-r--r-- 1 0 0  798 Apr  1 18:27 systemd-remount-fs.service
+-rw-r--r-- 1 0 0 1688 Apr  1 18:27 systemd-resolved.service
+drwxr-xr-x 2 0 0 4096 May  7 20:10 systemd-resolved.service.d
+-rw-r--r-- 1 0 0  744 Apr  1 18:27 systemd-rfkill.service
+-rw-r--r-- 1 0 0  726 Feb 14  2019 systemd-rfkill.socket
+-rw-r--r-- 1 0 0  537 Apr  1 18:27 systemd-suspend.service
+-rw-r--r-- 1 0 0  596 Apr  1 18:27 systemd-suspend-then-hibernate.service
+-rw-r--r-- 1 0 0  693 Apr  1 18:27 systemd-sysctl.service
+-rw-r--r-- 1 0 0  700 Apr  1 18:27 systemd-sysusers.service
+-rw-r--r-- 1 0 0 1055 Apr  1 18:27 systemd-timedated.service
+-rw-r--r-- 1 0 0 1433 Apr  1 18:27 systemd-timesyncd.service
+drwxr-xr-x 2 0 0 4096 May  7 20:10 systemd-timesyncd.service.d
+-rw-r--r-- 1 0 0 1196 Apr  1 18:27 systemd-time-wait-sync.service
+-rw-r--r-- 1 0 0  659 Apr  1 18:27 systemd-tmpfiles-clean.service
+-rw-r--r-- 1 0 0  490 Feb 14  2019 systemd-tmpfiles-clean.timer
+-rw-r--r-- 1 0 0  732 Apr  1 18:27 systemd-tmpfiles-setup-dev.service
+-rw-r--r-- 1 0 0  772 Apr  1 18:27 systemd-tmpfiles-setup.service
+-rw-r--r-- 1 0 0  635 Feb 14  2019 systemd-udevd-control.socket
+-rw-r--r-- 1 0 0  610 Feb 14  2019 systemd-udevd-kernel.socket
+-rw-r--r-- 1 0 0  986 Apr  1 18:27 systemd-udevd.service
+-rw-r--r-- 1 0 0  863 Apr  1 18:27 systemd-udev-settle.service
+-rw-r--r-- 1 0 0  763 Apr  1 18:27 systemd-udev-trigger.service
+-rw-r--r-- 1 0 0  797 Apr  1 18:27 systemd-update-utmp-runlevel.service
+-rw-r--r-- 1 0 0  794 Apr  1 18:27 systemd-update-utmp.service
+-rw-r--r-- 1 0 0  628 Apr  1 18:27 systemd-user-sessions.service
+-rw-r--r-- 1 0 0  690 Apr  1 18:27 systemd-volatile-root.service
+-rw-r--r-- 1 0 0 1415 Feb 14  2019 system-update-cleanup.service
+-rw-r--r-- 1 0 0  543 Feb 14  2019 system-update-pre.target
+-rw-r--r-- 1 0 0  617 Feb 14  2019 system-update.target
+drwxr-xr-x 2 0 0 4096 May  7 20:18 system-update.target.wants
+-rw-r--r-- 1 0 0  445 Feb 14  2019 timers.target
+drwxr-xr-x 2 0 0 4096 May  7 20:10 timers.target.wants
+-rw-r--r-- 1 0 0  435 Feb 14  2019 time-sync.target
+-rw-r--r-- 1 0 0  271 Aug 30  2016 triggerhappy.service
+-rw-r--r-- 1 0 0   73 Aug 30  2016 triggerhappy.socket
+lrwxrwxrwx 1 0 0   21 Apr  1 18:27 udev.service -> systemd-udevd.service
+-rw-r--r-- 1 0 0  203 Feb 22  2019 udisks2.service
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 umountfs.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 umountnfs.service -> /dev/null
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 umountroot.service -> /dev/null
+-rw-r--r-- 1 0 0  457 Feb 14  2019 umount.target
+lrwxrwxrwx 1 0 0   27 Apr  1 18:27 urandom.service -> systemd-random-seed.service
+-rw-r--r-- 1 0 0  222 Feb 24  2018 usb_modeswitch@.service
+-rw-r--r-- 1 0 0  688 Apr  1 18:27 user-runtime-dir@.service
+-rw-r--r-- 1 0 0  729 Apr  1 18:27 user@.service
+-rw-r--r-- 1 0 0  432 Feb 14  2019 user.slice
+drwxr-xr-x 2 0 0 4096 May  7 20:10 user-.slice.d
+-rw-r--r-- 1 0 0  236 May  7 20:18 vncserver-virtuald.service
+-rw-r--r-- 1 0 0  240 May  7 20:18 vncserver-x11-serviced.service
+-rw-r--r-- 1 0 0  486 Apr 16 18:37 wpa_supplicant-nl80211@.service
+-rw-r--r-- 1 0 0  286 Apr 16 18:37 wpa_supplicant.service
+-rw-r--r-- 1 0 0  455 Apr 16 18:37 wpa_supplicant@.service
+-rw-r--r-- 1 0 0  478 Apr 16 18:37 wpa_supplicant-wired@.service
+lrwxrwxrwx 1 0 0    9 Apr  1 18:27 x11-common.service -> /dev/null
+-rw-r--r-- 1 0 0  511 Feb 22  2019 zram-setup@.service
+
+
+pi@raspberrypi:/lib/systemd/system $ sudo service enable pi-clock.service
+enable: unrecognized service
+pi@raspberrypi:/lib/systemd/system $ sudo systemctl enable pi-clock.service 
+Created symlink /etc/systemd/system/multi-user.target.wants/pi-clock.service → /lib/systemd/system/pi-clock.service.
+pi@raspberrypi:/lib/systemd/system $ sudo systemctl start pi-clock.service 
+pi@raspberrypi:/lib/systemd/system $ 
+pi@raspberrypi:/lib/systemd/system $ sudo systemctl stop pi-clock.service 
+pi@raspberrypi:/lib/systemd/system $ sudo systemctl start pi-clock.service 
+pi@raspberrypi:/lib/systemd/system $ 
+
+
