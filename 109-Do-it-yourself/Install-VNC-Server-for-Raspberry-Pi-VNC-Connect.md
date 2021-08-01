@@ -1,5 +1,5 @@
 # Download VNC Server for Raspberry Pi | VNC® Connect | <a href="https://www.tomshardware.com/how-to/install-vnc-raspberry-pi-os">source</a>
-
+<a href="https://www.realvnc.com/en/connect/download/vnc/windows/">Download VNC Viewer</a> of window pc
 ## How to Install VNC on Raspberry Pi OS (64 bit) 
 1. Open a terminal window either directly on the Raspberry Pi or by connecting remotely via SSH.
 2. Update the list of available software for the Raspberry Pi by typing:
