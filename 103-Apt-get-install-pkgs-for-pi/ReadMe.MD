@@ -7,6 +7,11 @@ This repository contains files such as Script | Tools | Worldlist | Settings and
 ![Linux File System](https://lcom.static.linuxfound.org/sites/lcom/files/standard-unix-filesystem-hierarchy.png)
 
 
+## Pi Update & Upgrade
+Update the pi and then upgrade
+          
+     sudo apt-get install arduino
+
 ## Arduino
 Programmable single-board microcontrollers board
           
@@ -22,25 +27,7 @@ Simple tool to light up the terminal through its funky fonts
 * <a href="http://www.figlet.org/">www.figlet.org</a>
 
 ## Important Linux Directory
-* <a href="https://github.com/SanjeevStephan/Kali-Linux/tree/master/var/www/html">/var/www/html</a> 
-
-## Important /home Directory
-* <a href="https://github.com/SanjeevStephan/Kali-Linux/tree/master/home/script/learn_how_to_script">learn_how_to_script </a>
-* <a href="https://github.com/SanjeevStephan/Kali-Linux/blob/master/home/script/readme.md">script </a> 
-* <a href="https://github.com/SanjeevStephan/Kali-Linux/blob/master/home/tools/README.md">tools</a> 
-
-## Top Repositories 
-* <a href="https://github.com/SanjeevStephan/Linux/tree/master/101-Getting-Started-with-Linux">101-Getting-Started-with-Linux</a>
-* <a href="https://github.com/SanjeevStephan/Linux/tree/master/102-Kali-Linux-on-Window">102-Kali-Linux-on-Window</a>
-* <a href="https://github.com/SanjeevStephan/Linux/tree/master/103-Hackwares">103-Hackwares</a>
-* <a href=""></a>
-
-## Popular Topics
-* <a href="https://github.com/SanjeevStephan/Kali-Linux/tree/master/home/script/wifi_hacking">Cracking WPA-2-PSK WiFi Password</a>
-
-## Top Website to Learn Linux For Hacking
-* <a href="https://www.ostechnix.com/">Ostechnix</a>
-* <a href=""></a>
+ * <a href="https://github.com/SanjeevStephan/Kali-Linux/tree/master/var/www/html">/var/www/html</a> 
 
 ## Top Hacking Library Websites
 * <a href="https://www.metasploit.com/">Metasploit</a>
