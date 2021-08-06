@@ -4,8 +4,6 @@
 ![Kali Linux Figlet](https://github.com/SanjeevStephan/Figlets/blob/master/images/figlet-kali-linux.jpg) <br/>
 This repository contains files such as Script | Tools | Worldlist | Settings and Much More which can later be used to restore the Linux System.If and when needed. 
 
-![Linux File System](https://lcom.static.linuxfound.org/sites/lcom/files/standard-unix-filesystem-hierarchy.png)
-
 
 ## Pi Update & Upgrade
 Update the pi and then upgrade
@@ -25,6 +23,12 @@ Simple tool to light up the terminal through its funky fonts
      sudo apt-get install figlet
 
 * <a href="http://www.figlet.org/">www.figlet.org</a>
+
+## RenameUtils
+Batch Rename Pkg Tool
+
+     sudo apt-get install renameutils
+  Use command "qmv *.png" to launch the console   
 
 ## Important Linux Directory
  * <a href="https://github.com/SanjeevStephan/Kali-Linux/tree/master/var/www/html">/var/www/html</a> 
