@@ -10,26 +10,25 @@ Update the pi and then upgrade
           
      sudo apt-get install arduino
 
-## Arduino
-Programmable single-board microcontrollers board
+Arduino | <a href="http://https://www.arduino.cc//">www.arduino.cc</a> | ( Programmable single-board microcontrollers board )
           
      sudo apt-get install arduino
      
-* <a href="http://https://www.arduino.cc//">www.arduino.cc</a>     
-
-## Figlet
-Simple tool to light up the terminal through its funky fonts
+Figlet | <a href="http://www.figlet.org/">www.figlet.org</a> | ( Simple tool to light up the terminal through its funky fonts )
           
      sudo apt-get install figlet
 
-* <a href="http://www.figlet.org/">www.figlet.org</a>
-
-## RenameUtils
-Batch Rename Pkg Tool
+RenameUtils
+         ( Batch Rename Pkg Tool )
 
      sudo apt-get install renameutils
   Use command "qmv *.png" to launch the console   
 
+TightVNC Server
+
+     sudo apt-get install tightvncserver
+     
+     
 ## Important Linux Directory
  * <a href="https://github.com/SanjeevStephan/Kali-Linux/tree/master/var/www/html">/var/www/html</a> 
 
