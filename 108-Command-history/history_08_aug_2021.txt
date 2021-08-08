@@ -1,0 +1,50 @@
+pi@raspberrypi:~ $ cd /home
+pi@raspberrypi:/home $ sudo nano apt-history.pkg
+pi@raspberrypi:/home $ sudo nano apthistory.sh
+pi@raspberrypi:/home $ sudo sh apthistory.sh 
+apthistory.sh: 2: apthistory.sh: Syntax error: "(" unexpected
+pi@raspberrypi:/home $ grep -i "Commandline" /var/log/apt/history.log
+Commandline: packagekit role='install-packages'
+Commandline: apt-get install tightvncserver
+Commandline: apt-get install realvnc-vnc-server
+Commandline: packagekit role='install-packages'
+Commandline: apt-get install renameutils
+pi@raspberrypi:/home $ grep -i "install" /var/log/apt/history.log
+Commandline: packagekit role='install-packages'
+Install: directvnc:armhf (0.7.7-1+b1), libdirectfb-1.7-7:armhf (1.7.7-9, automatic)
+Commandline: apt-get install tightvncserver
+Install: tightvncserver:armhf (1:1.3.9-9+deb10u1), xfonts-base:armhf (1:1.0.5, automatic)
+Commandline: apt-get install realvnc-vnc-server
+Install: realvnc-vnc-server:armhf (6.7.2.42622)
+Commandline: packagekit role='install-packages'
+Install: brutalchess:armhf (0.5.2+dfsg-8)
+Commandline: apt-get install renameutils
+Install: renameutils:armhf (0.12.0-7)
+pi@raspberrypi:/home $ grep "install " /var/log/dpkg.log.1^C
+pi@raspberrypi:/home $ grep "install " /var/log/dpkg.log.1
+2021-07-25 20:39:56 install libpipewire-0.2-1:armhf <none> 0.2.5-1
+2021-07-25 20:41:05 install xdg-desktop-portal:armhf <none> 1.2.0-1
+2021-07-25 20:41:05 install xdg-desktop-portal-gtk:armhf <none> 1.2.0-1
+2021-07-26 14:01:26 install libapr1:armhf <none> 1.6.5-1
+2021-07-26 14:01:26 install libaprutil1:armhf <none> 1.6.1-4
+2021-07-26 14:01:27 install libaprutil1-dbd-sqlite3:armhf <none> 1.6.1-4
+2021-07-26 14:01:27 install libaprutil1-ldap:armhf <none> 1.6.1-4
+2021-07-26 14:01:27 install apache2-bin:armhf <none> 2.4.38-3+deb10u5
+2021-07-26 14:01:29 install apache2-data:all <none> 2.4.38-3+deb10u5
+2021-07-26 14:01:29 install apache2-utils:armhf <none> 2.4.38-3+deb10u5
+2021-07-26 14:01:30 install apache2:armhf <none> 2.4.38-3+deb10u5
+2021-07-28 14:28:50 install figlet:armhf <none> 2.2.5-3
+2021-07-29 19:57:06 install binutils-avr:armhf <none> 2.26.20160125+Atmel3.6.1-4
+2021-07-29 19:57:08 install gcc-avr:armhf <none> 1:5.4.0+Atmel3.6.1-2
+2021-07-29 19:57:29 install avr-libc:all <none> 1:2.0.0+Atmel3.6.1-2
+2021-07-29 19:57:36 install libftdi1:armhf <none> 0.20-4
+2021-07-29 19:57:36 install libhidapi-libusb0:armhf <none> 0.8.0~rc1+git20140818.d17db57+dfsg-2
+2021-07-29 19:57:37 install avrdude:armhf <none> 6.3-20171130+svn1429-2+rpt1
+2021-07-29 19:57:38 install extra-xdg-menus:all <none> 1.0-4
+2021-07-29 19:57:39 install libjna-jni:armhf <none> 4.5.2-1
+2021-07-29 19:57:39 install libjna-java:all <none> 4.5.2-1
+2021-07-29 19:57:40 install librxtx-java:armhf <none> 2.2pre2+dfsg1-2
+2021-07-29 19:57:41 install arduino-core:all <none> 2:1.0.5+dfsg2-4.1
+2021-07-29 19:57:43 install arduino:all <none> 2:1.0.5+dfsg2-4.1
+pi@raspberrypi:/home $ ^C
+pi@raspberrypi:/home $ 
