@@ -4,7 +4,14 @@
 APT Update
 
     sudo apt-get update | sudo apt-get upgrade
-    
+Apache2
+
+    sudo systemctl enable apache2 
+    sudo systemctl status apache2  | sudo service apache2 status
+    sudo systemctl start apache2   | sudo service apache2 start
+    sudo systemctl stop apache2    | sudo service apache2 stop
+    sudo systemctl restart apache2 | sudo service apache2 restart
+    sudo systemctl disable apache2
 ## R
 Reboot
    
