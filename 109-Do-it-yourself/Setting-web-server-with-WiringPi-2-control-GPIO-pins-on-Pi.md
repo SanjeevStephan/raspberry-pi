@@ -35,4 +35,17 @@ Browse to the default web page either on the Pi or from another computer on the 
 ![apache2 index page ](https://iotdesignpro.com/sites/default/files/inline-images/Webserver-using-Apache-for-Controlling-an-LED-with-Raspberry-Pi.png)
 This means the Apache web server is working.
 
+To change the default web page with your own HTML page
+Navigate to this directory in a terminal window
 
+    cd var/www/html
+    ls -al
+    This will show you:
+    total 12
+    drwxr-xr-x  2 root root 4096 Jan  8 01:29 .
+    drwxr-xr-x 12 root root 4096 Jan  8 01:28 ..
+    -rw-r--r--  1 root root  177 Jan  8 01:29 index.html
+    
+This shows that by default there is one file in /var/www/html/ called index.html and it is owned by the root user. To edit the file, you need to change its ownership to your own username. Change the owner of the file using:   
+    
+     Sudo chown pi: index.html   
