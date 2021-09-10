@@ -131,7 +131,8 @@ system("gpio -g mode 6 out");
 </code>
     
 ````
-		  type : (http://localhost) on chrome browser
+
+type : (http://localhost) on chrome browser
 ![pi_web_page](https://iotdesignpro.com/sites/default/files/inline-images/Raspberry-Pi-Webserver.png)    
 
 In the above code there is a PHP script which checks which button is pressed by using below code and then turns on and off the LED accordingly.
