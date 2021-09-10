@@ -126,8 +126,40 @@ system("gpio -g mode 6 out");
             }
 ?>
    </body>
-</html> ````
+</html>
 
 </code>
     
+````
+		  type : (http://localhost) on chrome browser
 ![pi_web_page](https://iotdesignpro.com/sites/default/files/inline-images/Raspberry-Pi-Webserver.png)    
+
+In the above code there is a PHP script which checks which button is pressed by using below code and then turns on and off the LED accordingly.
+
+
+````<?php
+
+system("gpio export 6");
+system("gpio -g mode 6 out");
+
+    if(isset($_GET['off']))
+        {
+                        echo "LED is off";
+			system("gpio -g write 6 0");
+	}
+            else if(isset($_GET['on']))
+            {
+                        echo "LED is on";
+			system("gpio -g write 6 1");
+            }
+?>
+
+````
+
+_Here we have used shell_exec() command in php code, this command is used to run the shell command from the PHP script. Learn more about shell_exec here. If you run the command inside shell_exec directly form the terminal of Raspberry pi, you can directly make GPIO pin 6 low or high. Below are two commands to test the LED directly from terminal.
+
+	system("gpio export 6");
+	system("gpio -g mode 6 out");
+	system("gpio -g write 6 0");
+	
+After completing this, run the code in your browser by typing the IP address of raspberry pi in the browser. You will see 2 buttons - ON, OFF to control your LED by clicking these buttons	
