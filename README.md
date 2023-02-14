@@ -13,7 +13,7 @@ This repository contains files such as Script | Tools | Worldlist | Settings and
 * <a href="https://github.com/SanjeevStephan/Kali-Linux/blob/master/root/alias">/etc/apache2/apache2.conf</a>
 * <a href="https://github.com/SanjeevStephan/Kali-Linux/blob/master/root/alias">/etc/apache2/sites-available/000-default.conf</a> 
 * <a href="https://github.com/SanjeevStephan/Kali-Linux/blob/master/root/bashrc">/root/.bashrc </a>
-
+ 
 ## Important PI Directory
 * <a href="https://github.com/SanjeevStephan/Kali-Linux/tree/master/var/www/html">/var/www/html</a> 
 
